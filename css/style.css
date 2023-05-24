@@ -522,6 +522,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -692,10 +696,6 @@ video {
   border-radius: 4px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -763,12 +763,29 @@ video {
   padding-bottom: 48px;
 }
 
+.px-\[100px\] {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
 
 .pl-\[30px\] {
   padding-left: 30px;
+}
+
+.pt-\[90px\] {
+  padding-top: 90px;
+}
+
+.pr-\[120px\] {
+  padding-right: 120px;
+}
+
+.pl-\[62px\] {
+  padding-left: 62px;
 }
 
 .text-center {
@@ -887,7 +904,7 @@ footer ul {
 }
 
 footer li {
-  margin-bottom: 19px;
+  margin: 10px 10px 19px 10px;
   position: relative;
 }
 
@@ -1003,9 +1020,13 @@ footer li:hover::before {
     padding-bottom: 48px;
   }
 
-  .md\:py-\[84px\] {
-    padding-top: 84px;
-    padding-bottom: 84px;
+  .md\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .md\:pb-\[64px\] {
+    padding-bottom: 64px;
   }
 
   .md\:pl-\[62px\] {
@@ -1016,16 +1037,12 @@ footer li:hover::before {
     padding-right: 120px;
   }
 
+  .md\:pt-\[190px\] {
+    padding-top: 190px;
+  }
+
   .md\:pt-\[84px\] {
     padding-top: 84px;
-  }
-
-  .md\:pb-\[84px\] {
-    padding-bottom: 84px;
-  }
-
-  .md\:pb-\[64px\] {
-    padding-bottom: 64px;
   }
 
   .md\:text-\[20px\] {
@@ -1034,5 +1051,42 @@ footer li:hover::before {
 
   .md\:leading-\[26px\] {
     line-height: 26px;
+  }
+}
+
+@media (min-width: 1028px) {
+  .lg\:h-\[98px\] {
+    height: 98px;
+  }
+
+  .lg\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .lg\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .lg\:px-\[200px\] {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .lg\:py-\[48px\] {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .lg\:pr-\[120px\] {
+    padding-right: 120px;
+  }
+
+  .lg\:pl-\[62px\] {
+    padding-left: 62px;
+  }
+
+  .lg\:pt-\[190px\] {
+    padding-top: 190px;
   }
 }
