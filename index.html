@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>VooDoo</title>
+</head>
+<body class="bg-mainBgColor flex flex-col min-h-screen ">
+    <header class="w-full flex justify-between p-[24px] md:py-[48px] md:pl-[62px] md:pr-[120px]  border-b border-black">
+        <a class="" href="/">
+            <img class="block w-[135px] h-[50px] md:w-[250px] md:h-[98px]" src="./img/Logo.png"  alt="logo">
+        </a>
+        <div class="w-[165px] md:w-[237px]  flex justify-between items-start ">
+            <a class="text-[14px] font-600 leading-[18px] md:text-[20px] md:leading-[26px] hover:underline p-[12px] leading-[25.5px]" href="#">About us</a>
+            <a class="text-[14px] font-700 leading-[18px] md:text-[20px] md:leading-[26px] text-white bg-black rounded-[4px] p-[12px] w-[700]  hover:bg-gray-600 transition duration-500 ease-out" href="#">Sign-up</a>
+        </div>
+    </header>
+
+    <main class="flex-grow p-[24px] md:px-[120px] mt-[50px] md:mt-[100px] w-full">
+
+        <!-- Required tag h1 -->
+        <h1 class="hidden">VooDoo</h1>
+
+        <!-- drop-down -->
+        <div class="relative w-full overflow-hidden text-white rounded">
+
+            <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-[72px] opacity-0 z-10 cursor-pointer" />
+
+            <div class="h-[72px] w-full p-[24px] flex items-center bg-black">
+              <h4 class="bg-[url('/img/alert-circle.png')] bg-no-repeat mr-[24px] md:mr-[48px] pl-[30px]">ALPHA</h4>
+              <p class="text-[14px] font-500 leading-[18px] md:hidden">Important info</p>
+              <p class="hidden md:block text-[14px] font-500 leading-[18px]">Important info regarding our service</p>
+            </div>
+            <div class="absolute right-5 top-[24px] text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </div>
+            <div class=" bg-black overflow-hidden transition-max-height duration-500 ease-in max-h-0 peer-checked:max-h-[500px] px-[30px]">
+              <p class="pb-[30px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat mollitia doloremque cupiditate quae quos atque laborum, accusamus ipsa autem. Suscipit laboriosam provident fuga totam error harum molestiae laborum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, esse possimus mollitia sed harum, maxime quisquam suscipit libero dignissimos maiores voluptatum magni accusantium odit corporis voluptates labore perspiciatis, provident quia?
+              </p>
+              <p class="pb-[30px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat mollitia doloremque cupiditate quae quos atque laborum, accusamus ipsa autem. Suscipit laboriosam provident fuga totam error harum molestiae laborum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, esse possimus mollitia sed harum, maxime quisquam suscipit libero dignissimos maiores voluptatum magni accusantium odit corporis voluptates labore perspiciatis, provident quia?
+              </p>
+            </div>
+          </div>
+
+          <!-- Products -->
+
+          <div class="flex justify-center  flex-wrap py-[48px] font-[700] text-[14px] leading-[18px]" id="productsList"></div>
+
+          <!-- Form -->
+
+          <form class="text-center p-[0] md:py-[48px] ">
+            <h4 class="font-[400] text-[14px] leading-[18px] md:text-[20px] md:leading-[26px] mb-[24px]">Be the first one to know when we launch our beta!</h4>
+
+            <input class="p-[16px] rounded-[4px] w-[230px] md:w-[530px] mr-[12px] placeholder:font-[600] text-[16px] leading-[20px] " type="email" placeholder="E-mail" >
+            <button class="bg-singUpColor hover:bg-gray-500 p-[16px] rounded-[4px] w-[94px] font-[600] text-[16px] leading-[20px] transition duration-500 ">Sign-up</button>
+
+          </form>
+    </main>
+
+    <footer class="flex-none bg-white p-[48px] md:px-[200px]  md:pt-[84px] md:pb-[64px] mt-auto flex flex-col md:flex-row items-start  md:justify-between font-[700] text-[14px] leading-[18px] " >
+        <a href="/" class="order-last md:order-first place-self-center md:place-self-start">
+            <img src="./img/footer-logo.png" alt="logo">
+        </a>
+        <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">RETURNS</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">TERMS & CONDITIONS</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">COOKIE POLICY</a></li>
+            <li><a href="#">COOKIE SETTINGS</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">ABOUT SECOND CHANCE</a></li>
+            <li><a href="#">CAREER</a></li>
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+        </ul>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
