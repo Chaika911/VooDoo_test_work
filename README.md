@@ -14,7 +14,7 @@ Landing page built as a test task: responsive layout with Tailwind CSS and a pro
 
 ## Features
 
-- Collapsible info banner
+- CSS-only accordion banner (Tailwind `peer` checkbox)
 - Product cards rendered from the Shopify API
 - E-mail sign-up form
 - Responsive header and footer
