@@ -51,7 +51,10 @@ class ProductCard {
     .then(response => response.json())
     .then(data => {
       const products = data.products;
-      console.log(products);
+
+      if (!Array.isArray(products)) {
+        throw new Error('No products in response');
+      }
 
       const productList = document.getElementById('productsList');
 
@@ -65,4 +68,9 @@ class ProductCard {
         productList.appendChild(cardElement);
       });
     })
-    .catch(error => alert('Сталася помилка... :( оновіть сторінку'));
+    .catch(() => {
+      const productList = document.getElementById('productsList');
+      const message = document.createElement('p');
+      message.textContent = 'Products are temporarily unavailable.';
+      productList.appendChild(message);
+    });
